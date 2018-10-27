@@ -13,3 +13,10 @@ Seznameni se s SQL nad ukazkovych schematem HR v databazi Oracle.
   <li> Vypiš TOP 10 nejčastějších FIRST_NAME z tabulky HR.EMPLOYEES.</li>
   <li> Které oddělení má nejvíce zamestnancu? </li>
  </ol>
+
+<h4> Sada 2 </h4>
+<ol>
+  <li> Vyber 10 programatoru, kteri jsou ve spolecnosti nejkratsi dobu. </li>
+  <li> Vyber 10 Sales Manageru, kteri jsou ve spolecnosti nejdelsi dobu. </li>
+  <li> Kolik firma mesicne vyplaci zamestnancum na vyplatach rozdeleno podle pozic. </li>
+ </ol>

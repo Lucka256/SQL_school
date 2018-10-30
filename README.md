@@ -31,11 +31,10 @@ Seznameni se s SQL nad ukazkovych schematem HR v databazi Oracle.
 </ol>
 <div>
 Poznamka: Pro reseni nasledujici ulohy je nutne pouzit schema Order entity pod zkratkou OE a nasledujici tabulky: 
+<br>
 <pre>
 select * from OE.orders
-
 select * from OE.order_items
-
 select * from OE.product_information
 </pre>
 </div>

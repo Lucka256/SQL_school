@@ -14,7 +14,15 @@ where PRODUCT_ID in
 )
 
 
-Kolik ma celkem zaplatit zakaznik s customer_id = 101 na objednavkach?
+-- Kolik ma celkem zaplatit zakaznik s customer_id = 101 na objednavkach?
+select sum(unit_price * quantity)
+from OE.order_items
+where Order_id in
+(
+    select Order_id
+    from OE.orders
+    where customer_id = 101
+)
 Kolik produktu koupil vyse zmineny zakaznik online a kolik primo u prodejce.
 Vypis top 10 nejdrazsich produktu v obchode.
 Vpis top 10 nejprodavanejsich produktu v obchode.

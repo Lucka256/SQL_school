@@ -23,6 +23,14 @@ where Order_id in
     from OE.orders
     where customer_id = 101
 )
-Kolik produktu koupil vyse zmineny zakaznik online a kolik primo u prodejce.
+
+
+--Kolik produktu koupil vyse zmineny zakaznik online a kolik primo u prodejce.
+select order_mode, count(order_mode)
+from OE.orders
+where customer_id = 101
+group by order_mode
+
+
 Vypis top 10 nejdrazsich produktu v obchode.
 Vpis top 10 nejprodavanejsich produktu v obchode.

@@ -32,5 +32,14 @@ where customer_id = 101
 group by order_mode
 
 
-Vypis top 10 nejdrazsich produktu v obchode.
+-- Vypis top 10 nejdrazsich produktu v obchode.
+select *
+from
+(
+    select Product_name, List_price
+    from OE.product_information
+    where List_price is not null
+    order by list_price desc
+)
+where rownum <= 10
 Vpis top 10 nejprodavanejsich produktu v obchode.

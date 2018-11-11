@@ -42,4 +42,15 @@ from
     order by list_price desc
 )
 where rownum <= 10
-Vpis top 10 nejprodavanejsich produktu v obchode.
+
+
+-- Vypis top 10 nejprodavanejsich produktu v obchode.
+select *
+from
+(
+    select Product_ID, sum(Quantity) as total_quantity
+    from OE.order_items
+    group by Product_id
+    order by total_quantity desc
+)
+where rownum <= 10
